@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hogwarts-api"
+version = "0.1.0"
+description = ""
+authors = ["bathing man"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+requests = "^2.22.0"
+pyyaml = "^5.1.2"
+jsonpath = "^0.82"
+
+[tool.poetry.dev-dependencies]
+coverage = "^4.5.4"
+coveralls = "^1.8.2"
+
+[tool.poetry.scripts]
+hogrun = "hogwarts_api.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
